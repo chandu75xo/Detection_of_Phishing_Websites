@@ -1,21 +1,16 @@
-# .gitignore for the backend
-#
-# Files listed here are NEVER committed to Git.
-# This is critical for security — .env contains your passwords and API keys.
-
 # Secret environment variables — NEVER commit this
 .env
 
-# SQLite database file — this is generated locally, not part of the codebase
+# SQLite database file
 *.db
 *.sqlite3
 
-# Python compiled files — generated automatically, not needed in Git
+# Python compiled files
 __pycache__/
 *.pyc
 *.pyo
 
-# Virtual environment folder (explained in README)
+# Virtual environment
 venv/
 .venv/
 env/
@@ -23,3 +18,17 @@ env/
 # OS files
 .DS_Store
 Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+
+# Django collected static
+staticfiles/
+
+# CSV outputs generated at runtime
+labeled_data.csv
+
+# Media uploads
+Template/htmls/media/
+Template/htmls/images/

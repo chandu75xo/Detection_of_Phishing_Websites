@@ -91,3 +91,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'Template/images')]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'Template/media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+##### Custom user model

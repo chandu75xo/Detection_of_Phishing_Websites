@@ -1,0 +1,25 @@
+# .gitignore for the backend
+#
+# Files listed here are NEVER committed to Git.
+# This is critical for security — .env contains your passwords and API keys.
+
+# Secret environment variables — NEVER commit this
+.env
+
+# SQLite database file — this is generated locally, not part of the codebase
+*.db
+*.sqlite3
+
+# Python compiled files — generated automatically, not needed in Git
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment folder (explained in README)
+venv/
+.venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
